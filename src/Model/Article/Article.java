@@ -1,3 +1,5 @@
+package Model.Article;
+
 /**
  * Created by msif on 19/10/17.
  */

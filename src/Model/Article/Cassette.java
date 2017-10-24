@@ -1,3 +1,5 @@
+package Model.Article;
+
 /**
  * Created by Loan on 24/10/2017.
  */

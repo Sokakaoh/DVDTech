@@ -1,3 +1,5 @@
+package Model;
+
 /**
  * Created by msif on 19/10/17.
  */

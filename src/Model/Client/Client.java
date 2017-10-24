@@ -1,3 +1,5 @@
+package Model.Client;
+
 import java.util.ArrayList;
 
 /**

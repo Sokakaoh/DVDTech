@@ -1,4 +1,7 @@
-import java.awt.geom.Arc2D;
+package Model.Client;
+
+import Model.Article.Article;
+
 import java.time.LocalDate;
 
 /**

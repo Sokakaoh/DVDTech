@@ -5,4 +5,10 @@ package Model.Article;
  */
 public abstract class Article {
     private float prixArticle;
+
+
+
+    public float getPrix(){
+        return prixArticle;
+    }
 }

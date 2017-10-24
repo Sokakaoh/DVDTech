@@ -1,7 +1,9 @@
 /**
  * Created by msif on 19/10/17.
  */
-public interface Facture {
+public class Facture {
+    private Location location = null;
+    private int prix;
     
 
 

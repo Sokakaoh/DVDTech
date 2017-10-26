@@ -4,11 +4,10 @@ package Model.Article;
  * Created by msif on 19/10/17.
  */
 public abstract class Article {
-    private float prixArticle;
+   private float prixArticle;
 
-
-
-    public float getPrix(){
+    public float getPrix()
+    {
         return prixArticle;
     }
 }

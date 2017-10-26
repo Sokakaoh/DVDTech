@@ -3,10 +3,18 @@ package Model.Article;
 /**
  * Created by Loan on 24/10/2017.
  */
-public class Cassette extends Film{
-    private float coefCassette = (float) 1.2;
+public class Cassette extends Film {
 
-    public float getCoefCassette(){
-        return coefCassette;
+    private float prixCoef;
+
+    public float getPrixCoef() {
+        return prixCoef;
+    }
+
+    @Override
+    public float getPrix() {
+        float p = prixCoef + super.getPrixFilm();
+
+        return p;
     }
 }

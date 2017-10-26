@@ -8,6 +8,13 @@ import Model.Catégorie.Catégorie;
 public abstract class Support {
     private float prixCoef;
 
+
+    public Support()
+    {
+
+    }
+
     public abstract float getPrixCoef();
+
 
 }

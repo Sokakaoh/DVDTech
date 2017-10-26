@@ -9,4 +9,10 @@ public class Récent extends Catégorie {
     public float getCoef(){
         return coef;
     }
+
+
+    @Override
+    public String toString() {
+            return "Récent";
+    }
 }

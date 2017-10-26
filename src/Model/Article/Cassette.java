@@ -7,6 +7,8 @@ public class Cassette extends Support {
 
     private float prixCoef= (float) 1.2;
 
+
+
     public float getPrixCoef() {
         return prixCoef;
     }

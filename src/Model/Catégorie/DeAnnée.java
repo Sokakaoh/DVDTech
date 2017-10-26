@@ -9,4 +9,9 @@ public class DeAnnée extends Catégorie {
     public float getCoef(){
         return coef;
     }
+
+    @Override
+    public String toString() {
+        return "DeAnnée";
+    }
 }

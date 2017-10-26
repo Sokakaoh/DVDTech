@@ -9,4 +9,10 @@ public class Nouveauté extends Catégorie {
     public float getCoef(){
         return coef;
     }
+
+
+    @Override
+    public String toString() {
+        return "Nouveauté";
+    }
 }

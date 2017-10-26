@@ -12,4 +12,7 @@ public class Client {
     private String adresseClient;
     private String mailClient;
     private String telClient;
+
+
+
 }

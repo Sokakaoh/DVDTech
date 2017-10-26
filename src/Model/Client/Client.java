@@ -2,6 +2,7 @@ package Model.Client;
 
 import Model.Article.Article;
 import Model.Article.Film;
+import Model.MoyenFacturation.MoyenFacturation;
 
 import java.util.ArrayList;
 
@@ -29,8 +30,8 @@ public class Client {
 
     }
 
-    public void faireLocation(Location l){
-        this.locationsClient.add(l);
+    public void faireLocation(Article a, long duree, MoyenFacturation moyenFacturation){
+        this.locationsClient.add(new Location(this,a,duree,moyenFacturation));
     }
 
     public ArrayList<Location> getLocationsClient() {

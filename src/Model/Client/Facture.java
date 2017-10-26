@@ -23,4 +23,7 @@ public class Facture {
     public float getPenaliter(){
         return penaliter;
     }
+    public float aPayer(){
+        return penaliter+location.getPrix();
+    }
 }

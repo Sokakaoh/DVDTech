@@ -35,5 +35,8 @@ public class Location {
         float penalite = -(getTempsRestant()*prix);
         factureLoc.setPenaliter(penalite);
     }
+    public float getPrix(){
+        return prix;
+    }
 
     }

@@ -8,8 +8,19 @@ import Model.Catégorie.Catégorie;
 public class Film extends Article {
     private String nomFilm;
     private Catégorie categorieFilm;
+    private Support support;
     private int dureeMinute;
     private float prixFilm;
+
+    public Film(String nomFilm,Catégorie categorieFilm,Support support,int duree, float prix){
+        this.nomFilm=nomFilm;
+        this.categorieFilm=categorieFilm;
+        this.dureeMinute=duree;
+        this.prixFilm=categorieFilm.getCoef()*prix;
+        this.support=support;
+
+    }
+
 
     public Catégorie getCategorieFilm() {
         return categorieFilm;
@@ -41,12 +52,7 @@ public class Film extends Article {
 
 
     public float getPrixFilm() {
-        return prixFilm * categorieFilm.getCoef();
-    }
-
-    @Override
-    public float getPrix() {
-        return prixFilm;
+        return (prixFilm * categorieFilm.getCoef())*support.getPrixCoef();
     }
 }
 

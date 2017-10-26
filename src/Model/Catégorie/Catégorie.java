@@ -6,4 +6,9 @@ package Model.Catégorie;
 public abstract class Catégorie {
     public float coef;
     public abstract float getCoef();
+
+    public Catégorie()
+    {
+        
+    }
 }

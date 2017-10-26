@@ -54,6 +54,10 @@ public class Film extends Article {
     public float getPrixFilm() {
         return (prixFilm * categorieFilm.getCoef())*support.getPrixCoef();
     }
+
+    public String toString(){
+        return nomFilm + ' ' + categorieFilm.toString();
+    }
 }
 
 

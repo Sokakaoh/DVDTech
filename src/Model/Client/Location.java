@@ -10,7 +10,6 @@ import java.time.LocalDate;
  */
 public class Location {
     private float prix;
-    private float penalite;
     private LocalDate date;
     private long dureeLoc;
     private Article article;
@@ -22,19 +21,19 @@ public class Location {
         this.article = article;
         this.date = LocalDate.now();
         this.dureeLoc=duree;
-        this.penalite = (float) 0.0;
         this.prix = article.getPrix() ;
         this.factureLoc = new Facture(this,moyenFacturation);
 
     }
-    public int tempsRestant(){
+    public int getTempsRestant(){
         LocalDate dateRetour = date.plusDays(dureeLoc);
         LocalDate dateAujourdHui = LocalDate.now();
         return dateRetour.compareTo(dateAujourdHui);
     }
 
     public void addPenaliter(){
-        this.penalite = -(tempsRestant()*prix);
+        float penalite = -(getTempsRestant()*prix);
+        factureLoc.setPenaliter(penalite);
     }
 
     }

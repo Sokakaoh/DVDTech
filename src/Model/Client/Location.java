@@ -1,6 +1,7 @@
 package Model.Client;
 
 import Model.Article.Article;
+import Model.MoyenFacturation.MoyenFacturation;
 
 import java.time.LocalDate;
 
@@ -8,21 +9,23 @@ import java.time.LocalDate;
  * Created by msif on 19/10/17.
  */
 public class Location {
-    private Double prix;
-    private Double penalite;
+    private float prix;
+    private float penalite;
     private LocalDate date;
     private long dureeLoc;
     private Article article;
     private Client clientLoc;
     private Facture factureLoc;
 
-    public Location(Client c,Article article,long duree ){
+    public Location(Client c,Article article,long duree,MoyenFacturation moyenFacturation ){
         this.clientLoc = c;
         this.article = article;
         this.date = LocalDate.now();
         this.dureeLoc=duree;
-        this.penalite = 0.0;
+        this.penalite = (float) 0.0;
         this.prix = article.getPrix() ;
+        this.factureLoc = new Facture(this,moyenFacturation);
+
     }
     public int tempsRestant(){
         LocalDate dateRetour = date.plusDays(dureeLoc);

@@ -5,5 +5,8 @@ package Model.MoyenFacturation;
  */
 public class Chèques {
 
-
+    @Override
+    public String toString() {
+        return "chèque";
+    }
 }

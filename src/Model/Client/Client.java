@@ -86,4 +86,10 @@ public class Client {
         return "Nom du client : " +nomClient + " , prenom du client :" + prenomClient + " , adresse du client : " + adresseClient
                 + " mail du client : " +mailClient + "telephone du client" + telClient;
     }
+
+    public String LocationString(){
+        for(location : locationsClient) {
+            location.toString();
+        }
+    }
 }

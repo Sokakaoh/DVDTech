@@ -6,6 +6,10 @@ package Model.Article;
 public abstract class Article {
    private float prixArticle;
 
+   public Article(){
+
+   }
+
     public float getPrix()
     {
         return prixArticle;

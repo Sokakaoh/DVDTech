@@ -6,6 +6,8 @@ package Model.MoyenFacturation;
 public class CarteBancaire {
 
 
-
-
+    @Override
+    public String toString() {
+        return "carte bancaire";
+    }
 }

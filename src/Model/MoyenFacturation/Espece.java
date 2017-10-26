@@ -20,6 +20,8 @@ public class Espece {
         return montantRendu;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Espece";
+    }
 }

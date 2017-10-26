@@ -5,5 +5,8 @@ package Model.MoyenFacturation;
  */
 public abstract class MoyenFacturation {
 
+    public MoyenFacturation(){
 
+
+    }
 }

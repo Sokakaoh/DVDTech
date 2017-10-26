@@ -18,13 +18,7 @@ public class Location {
 
     public Location(Client c,Article article,long duree,MoyenFacturation moyenFacturation ){
         this.clientLoc = c;
-        this.article = article;
-        this.date = LocalDate.now();
-        this.dureeLoc=duree;
-        this.prix = article.getPrix() ;
-        this.factureLoc = new Facture(this,moyenFacturation);
 
-    }
     public int getTempsRestant(){
         LocalDate dateRetour = date.plusDays(dureeLoc);
         LocalDate dateAujourdHui = LocalDate.now();
@@ -39,4 +33,10 @@ public class Location {
         return prix;
     }
 
+
+
+    public String toString(){
+
+        return "clientLocation" + clientLoc + "duree" + dureeLoc + "prix" +prix + "date" + date + "facture" + factureLoc;
     }
+}

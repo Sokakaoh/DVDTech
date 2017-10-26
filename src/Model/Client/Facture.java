@@ -26,4 +26,9 @@ public class Facture {
     public float aPayer(){
         return penaliter+location.getPrix();
     }
+
+    @Override
+    public String toString() {
+
+    }
 }

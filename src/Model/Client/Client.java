@@ -17,8 +17,7 @@ public class Client {
     private String mailClient;
     private String telClient;
 
-    public Client(ArrayList<Location>locationsClient, String nomClient, String prenomClient, String adresseClient, String mailClient, String telClient){
-        this.locationsClient = locationsClient;
+    public Client(String nomClient, String prenomClient, String adresseClient, String mailClient, String telClient){
         this.nomClient = nomClient;
         this.prenomClient = prenomClient;
         this.adresseClient = adresseClient;

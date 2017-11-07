@@ -1,11 +1,16 @@
 package Model;
 
+import Controller.ArticleController;
+import Controller.ClientController;
+import Controller.FactureController;
 import Model.Article.*;
 import Model.Catégorie.*;
 import Model.Client.Client;
 import Model.Client.Location;
 import Model.MoyenFacturation.MoyenFacturation;
+import View.Fenêtre;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 /**
@@ -30,6 +35,9 @@ public class main {
         Article f1 = new Film("La-Haut",deAnnée,dvd,126,15);
         Article f2 = new Film("Le Seigneur des Anneaux",plusAncien,cassette,150,12);
         Location l= new Location(c1,f1,48,new MoyenFacturation());
+
+        JFrame fenetre = new Fenêtre(new ArticleController(),new FactureController(),new ClientController());
+        fenetre.setVisible(true);
 
     }
 }

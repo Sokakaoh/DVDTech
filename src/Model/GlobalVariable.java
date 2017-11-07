@@ -9,3 +9,4 @@ public interface GlobalVariable {
     public static int DEUXJOUR = 48;
     public static int TROISJOUR = 72;
 }
+

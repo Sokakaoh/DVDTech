@@ -15,9 +15,9 @@ public class Film extends Article {
     public Film(String nomFilm,Catégorie categorieFilm,Support support,int duree, float prix){
         this.nomFilm=nomFilm;
         this.categorieFilm=categorieFilm;
+        this.support=support;
         this.dureeMinute=duree;
         this.prixFilm=categorieFilm.getCoef()*prix;
-        this.support=support;
 
     }
 

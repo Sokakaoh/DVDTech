@@ -9,6 +9,6 @@ public abstract class Catégorie {
 
     public Catégorie()
     {
-        
+
     }
 }

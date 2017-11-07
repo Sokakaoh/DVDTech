@@ -20,9 +20,11 @@ public class Facture {
     public void setPenaliter(float penaliter) {
         this.penaliter = penaliter;
     }
+
     public float getPenaliter(){
         return penaliter;
     }
+
     public float aPayer(){
         return penaliter+location.getPrix();
     }

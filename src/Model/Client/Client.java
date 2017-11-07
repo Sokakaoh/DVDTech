@@ -16,6 +16,7 @@ public class Client {
     private String adresseClient;
     private String mailClient;
     private String telClient;
+    private MoyenFacturation prepaye;
 
     public Client(String nomClient, String prenomClient, String adresseClient, String mailClient, String telClient){
         this.nomClient = nomClient;

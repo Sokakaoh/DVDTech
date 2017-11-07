@@ -26,7 +26,7 @@ public class main {
 
 
         ArrayList<Location> l1 = new ArrayList<>();
-        Client c1 = new Client(l1,"Sif","Mahel","25 rue du moulin","mahel.sif@gmail.com","0647859612");
+        Client c1 = new Client("Sif","Mahel","25 rue du moulin","mahel.sif@gmail.com","0647859612");
         Article f1 = new Film("La-Haut",deAnnée,dvd,126,15);
         Article f2 = new Film("Le Seigneur des Anneaux",plusAncien,cassette,150,12);
         Location l= new Location(c1,f1,48,new MoyenFacturation());

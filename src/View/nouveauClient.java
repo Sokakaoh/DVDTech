@@ -29,5 +29,6 @@ public class nouveauClient extends JPanel {
         panel.add(mail,mailClient);
         panel.add(tel,telClient);
         panel.add(valider);
+        this.add(panel);
     }
 }

@@ -38,6 +38,7 @@ public class nouvelLocation extends JPanel {
         panel.add(facturation);
         panel.add(listeFacture);
         panel.add(louer);
+        this.add(panel);
 
 
     }

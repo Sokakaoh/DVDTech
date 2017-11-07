@@ -16,6 +16,7 @@ public class rechercherLocationClient extends JPanel {
         panel.add(titre);
         panel.add(client,listeClient);
         panel.add(rechercher);
+        this.add(panel);
 
     }
 }

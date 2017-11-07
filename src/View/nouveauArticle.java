@@ -28,6 +28,14 @@ public class nouveauArticle extends JPanel{
         JTextField prixArticleFilm = new JTextField();
 
         JButton ajouter = new JButton("Ajouter");
+
+        panel.add(nom,nomArticle);
+        panel.add(categorie,listeCategorie);
+        panel.add(support,listeSupport);
+        panel.add(duree,dureeArticle);
+        panel.add(prix,prixArticleFilm);
+        panel.add(ajouter);
+        this.add(panel);
     }
 
 }

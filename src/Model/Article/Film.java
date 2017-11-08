@@ -1,23 +1,26 @@
 package Model.Article;
 
 import Model.Catégorie.Catégorie;
+import Model.Genre.Genre;
 
 /**
  * Created by Loan on 24/10/2017.
  */
 public class Film extends Article {
     private String nomFilm;
+    private Genre genreFilm;
     private Catégorie categorieFilm;
     private Support support;
     private int dureeMinute;
     private float prixFilm;
 
-    public Film(String nomFilm,Catégorie categorieFilm,Support support,int duree, float prix){
+    public Film(String nomFilm,Catégorie categorieFilm,Support support,int duree, float prix, Genre genre){
         this.nomFilm=nomFilm;
         this.categorieFilm=categorieFilm;
         this.support=support;
         this.dureeMinute=duree;
         this.prixFilm=categorieFilm.getCoef()*prix;
+        this.genreFilm = genre;
 
     }
 
@@ -57,6 +60,14 @@ public class Film extends Article {
 
     public String toString(){
         return nomFilm + ' ' + categorieFilm.toString();
+    }
+
+    public Genre getGenreFilm() {
+        return genreFilm;
+    }
+
+    public void setGenreFilm(Genre genre) {
+        this.genreFilm = genre;
     }
 }
 

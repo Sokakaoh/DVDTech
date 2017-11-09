@@ -30,8 +30,8 @@ public class Client {
 
     }
 
-    public void faireLocation(Article a, long duree, MoyenFacturation moyenFacturation){
-        this.locationsClient.add(new Location(this,a,duree,moyenFacturation));
+    public void faireLocation(Article a, long duree){
+        this.locationsClient.add(new Location(this,a,duree));
     }
 
     public ArrayList<Location> getLocationsClient() {

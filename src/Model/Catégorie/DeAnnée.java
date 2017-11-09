@@ -5,12 +5,10 @@ package Model.Catégorie;
  */
 public class DeAnnée extends Catégorie {
     private float coef = (float) 1.7;
-
+    @Override
     public float getCoef(){
         return coef;
     }
-
-    @Override
     public String toString() {
         return "DeAnnée";
     }

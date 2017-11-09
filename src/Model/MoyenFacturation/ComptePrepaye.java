@@ -30,5 +30,9 @@ public class ComptePrepaye extends MoyenFacturation {
         this.argentDispo = argent;
     }
 
+    public String toString(){
+        return String.valueOf(this.getArgentDispo());
+    }
+
 
 }

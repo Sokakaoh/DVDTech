@@ -69,7 +69,7 @@ public class Film extends Article {
     }
 
     public String toString(){
-        return nomFilm + ' ' + categorieFilm.toString();
+        return nomFilm + ' ' + categorieFilm.toString()+ ' '+ support.toString()+ ' '+ getDureeMinute()+"min "+getPrixFilm()+ ' '+genreFilm.toString();
     }
 
     public Genre getGenreFilm() {

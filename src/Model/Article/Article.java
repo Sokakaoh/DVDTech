@@ -8,4 +8,5 @@ import Model.Genre.Genre;
 public abstract class Article {
     public abstract float getPrix();
     public abstract String getNom();
+    public abstract String toString();
 }

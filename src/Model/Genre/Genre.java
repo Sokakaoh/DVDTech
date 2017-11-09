@@ -5,5 +5,6 @@ package Model.Genre;
  */
 public abstract class Genre  {
     private String genre;
+    @Override
     public abstract String toString();
 }

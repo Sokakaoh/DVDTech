@@ -11,4 +11,5 @@ public abstract class Article {
     {
         return prixArticle;
     }
+    public abstract String getNomFilm();
 }

@@ -39,4 +39,8 @@ public class Location {
         return prix;
     }
 
+    @Override
+    public String toString() {
+        return article.getNomFilm();
     }
+}

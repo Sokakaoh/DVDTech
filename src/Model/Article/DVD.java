@@ -8,7 +8,9 @@ import Model.Catégorie.Catégorie;
 public class DVD extends Support {
     private float prixCoef = (float) 1.5;
 
+    @Override
     public float getPrixCoef() {
         return prixCoef;
     }
+    public String toString(){return " DVD ";}
 }

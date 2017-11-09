@@ -42,9 +42,9 @@ public class main {
         Article f1 = new Film("La-Haut",deAnnée,dvd,126,15,new Action());
         Article f2 = new Film("Nemo",deAnnéePassé,bluRay,128,15,new Comédie());
         //Article f2 = new Film("Le Seigneur des Anneaux",plusAncien,cassette,150,12);
-        Location l= new Location(c1, f1, 48, new Espece());
-        Location l2 = new Location(c1,f2,48,new ComptePrepaye());
-        Facture facture = new Facture(l,new Espece());
+        Location l= new Location(c1, f1, 48);
+        Location l2 = new Location(c1,f2,48);
+        Facture facture = new Facture(l1, new Espece());
         System.out.println(c1.toString());
         System.out.println(f1.toString());
         System.out.println(f2.toString());

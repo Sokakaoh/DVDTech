@@ -14,10 +14,10 @@ public class Controller {
 
 
     public Controller (){
-        this.f = new Fenêtre();
-        actionButton a=new actionButton(f);
-        f.setControleMenu(a);
-        f.setVisible(true);
+        //this.f = new Fenêtre();
+        //actionButton a=new actionButton(f);
+        //f.setControleMenu(a);
+        //f.setVisible(true);
     }
 
 

@@ -2,31 +2,43 @@ package Model.Client;
 
 import Model.MoyenFacturation.MoyenFacturation;
 
+import java.util.ArrayList;
+
 /**
  * Created by msif on 19/10/17.
  */
 public class Facture {
-    private Location location = null;
+    private ArrayList<Location> location = new ArrayList<Location>();
     MoyenFacturation moyFacturation;
-    float penaliter;
+    float penalite;
 
 
-    public Facture(Location loc, MoyenFacturation moy){
+    public Facture(ArrayList<Location> loc, MoyenFacturation moy){
         this.location = loc;
         this.moyFacturation = moy;
     }
 
-
-    public void setPenaliter(float penaliter) {
-        this.penaliter = penaliter;
+    public void addLocation(Location l)
+    {
+        this.location.add(l);
     }
 
-    public float getPenaliter(){
-        return penaliter;
+    public void setPenalite(float penalite) {
+        this.penalite = penalite;
+    }
+
+    public float getPenalite(){
+        return penalite;
     }
 
     public float aPayer(){
-        return penaliter+location.getPrix();
+        this.penalite = 0;
+        float prixFinal = 0;
+        for (Location location : location) {
+            prixFinal = location.getPrix() + prixFinal;
+            penalite = location.getPenaliter() + penalite;
+        }
+        return penalite + prixFinal;
     }
 
     @Override

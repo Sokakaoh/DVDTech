@@ -4,8 +4,11 @@ import Controller.*;
 import Model.Article.*;
 import Model.Catégorie.*;
 import Model.Client.Client;
+import Model.Client.Facture;
 import Model.Client.Location;
 import Model.Genre.Action;
+import Model.Genre.Comédie;
+import Model.MoyenFacturation.ComptePrepaye;
 import Model.MoyenFacturation.Espece;
 import Model.MoyenFacturation.MoyenFacturation;
 import View.Fenêtre;
@@ -20,6 +23,7 @@ import java.util.ArrayList;
 public class main {
 
     public static void main(String[] args) {
+
         Catégorie deAnnée = new DeAnnée();
         Catégorie deAnnéePassé = new DeAnnéePassé();
         Catégorie nouveauté = new Nouveauté();
@@ -36,9 +40,23 @@ public class main {
         ArrayList<Location> l1 = new ArrayList<>();
         Client c1 = new Client("Sif","Mahel","25 rue du moulin","mahel.sif@gmail.com","0647859612");
         Article f1 = new Film("La-Haut",deAnnée,dvd,126,15,new Action());
+        Article f2 = new Film("Nemo",deAnnéePassé,bluRay,128,15,new Comédie());
         //Article f2 = new Film("Le Seigneur des Anneaux",plusAncien,cassette,150,12);
         Location l= new Location(c1, f1, 48, new Espece());
-        System.out.print(l.toString());
+        Location l2 = new Location(c1,f2,48,new ComptePrepaye());
+        Facture facture = new Facture(l,new Espece());
+        System.out.println(c1.toString());
+        System.out.println(f1.toString());
+        System.out.println(f2.toString());
+        System.out.println(l.toString());
+        System.out.println(l2.toString());
+        System.out.println(facture.toString());
+
+
+
+
+
+
 
 
 

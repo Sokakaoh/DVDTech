@@ -26,7 +26,7 @@ public class Client {
         this.telClient = telClient;
     }
 
-    public Client(){
+   public Client(){
 
     }
 
@@ -84,6 +84,6 @@ public class Client {
 
     public String toString(){
         return "Nom du client : " +nomClient + " , prenom du client :" + prenomClient + " , adresse du client : " + adresseClient
-                + " mail du client : " +mailClient + "telephone du client" + telClient;
+                + " mail du client : " +mailClient + " telephone du client " + telClient;
     }
 }

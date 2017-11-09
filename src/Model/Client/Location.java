@@ -16,8 +16,9 @@ public class Location {
     private Client clientLoc;
     private Facture factureLoc;
 
-    public Location(Client c,Article article,long duree,MoyenFacturation moyenFacturation ){
+    public Location(Client c,Article article,long duree,MoyenFacturation moyenFacturation ) {
         this.clientLoc = c;
+    }
 
     public int getTempsRestant(){
         LocalDate dateRetour = date.plusDays(dureeLoc);

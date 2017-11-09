@@ -14,7 +14,7 @@ public class ComptePrepaye extends MoyenFacturation {
     public float dechargerCompte(float argent)
     {
         argentDispo = argentDispo - argent;
-        if (argentDispo > 0)
+        if (argentDispo < 0)
         {
             argentDispo = 0;
         }

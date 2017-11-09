@@ -50,9 +50,13 @@ public class main {
 
         System.out.println(d.get(0).toString());
         //Article f2 = new Film("Le Seigneur des Anneaux",plusAncien,cassette,150,12);
-        Location l= new Location(c1, f1, 48, new Espece());
-        Location l2 = new Location(c1,f2,48,new ComptePrepaye());
-        Facture facture = new Facture(l,new Espece());
+        Location l= new Location(c1, f1, 48);
+        Location l2 = new Location(c1,f2,48);
+
+        ArrayList<Location> listLoc = new ArrayList<Location>();
+        listLoc.add(l);
+        listLoc.add(l2);
+        Facture facture = new Facture(listLoc,new Espece());
         System.out.println(c1.toString());
         System.out.println(f1.toString());
         System.out.println(f2.toString());

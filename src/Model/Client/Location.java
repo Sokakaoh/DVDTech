@@ -14,15 +14,13 @@ public class Location {
     private long dureeLoc;
     private Article article;
     private Client clientLoc;
-    private Facture factureLoc;
 
-    public Location(Client c,Article article,long duree,MoyenFacturation moyenFacturation ){
+    public Location(Client c,Article article,long duree){
         this.clientLoc = c;
         this.article = article;
         this.date = LocalDate.now();
         this.dureeLoc=duree;
         this.prix = article.getPrix() ;
-        this.factureLoc = new Facture(this,moyenFacturation);
 
     }
     public int getTempsRestant(){
@@ -32,9 +30,8 @@ public class Location {
     }
 
 
-    public void addPenaliter(){
-        float penalite = -(getTempsRestant()*prix);
-        factureLoc.setPenaliter(penalite);
+    public float getPenaliter(){
+        return  -(getTempsRestant()*prix);
     }
     public float getPrix(){
         return prix;
@@ -48,4 +45,6 @@ public class Location {
     public Article getArticle() {
         return article;
     }
+
+
 }

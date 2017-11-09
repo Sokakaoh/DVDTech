@@ -50,6 +50,8 @@ public class main {
         System.out.println(f2.toString());
         System.out.println(l.toString());
         System.out.println(l2.toString());
+        c1.toStringHistorique();
+        System.out.println(facture.aPayer());
         System.out.println(facture.toString());
 
 

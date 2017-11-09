@@ -48,7 +48,11 @@ public class Fenêtre extends JFrame {
         menu.add(bNouveauArticle = new JMenuItem("Nouveau article"));
         this.setJMenuBar(menu);
         this.setVisible(true);
+
+        this.setContentPane(nouveauArticle);
     }
+
+
     public void buttonEnable(JMenuItem ok){
         bNouveauClient.setEnabled(true);
         bNouvelleLocation.setEnabled(true);

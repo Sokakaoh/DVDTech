@@ -42,8 +42,17 @@ public class Facture {
         return penalite + prixFinal;
     }
 
+    public String parcourirListLoc(){
+        String resultat = null;
+        for(Location location: location){
+            resultat += location.getArticle().toString()+ " ";
+
+        }
+        return resultat;
+    }
+
     @Override
     public String toString() {
-        return location + " en" +moyFacturation;
+        return parcourirListLoc() + " en" +moyFacturation;
     }
 }

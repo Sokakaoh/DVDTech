@@ -1,8 +1,6 @@
 package Model;
 
-import Controller.ArticleController;
-import Controller.ClientController;
-import Controller.FactureController;
+import Controller.*;
 import Model.Article.*;
 import Model.Catégorie.*;
 import Model.Client.Client;
@@ -11,6 +9,7 @@ import Model.MoyenFacturation.MoyenFacturation;
 import View.Fenêtre;
 
 import javax.swing.*;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 /**
@@ -28,6 +27,8 @@ public class main {
         Support cassette = new Cassette();
         Support bluRay = new BluRay();
 
+        //Controller test = new Controller();
+
 
 
         ArrayList<Location> l1 = new ArrayList<>();
@@ -36,8 +37,7 @@ public class main {
         Article f2 = new Film("Le Seigneur des Anneaux",plusAncien,cassette,150,12);
         Location l= new Location(c1,f1,48,new MoyenFacturation());
 
-        JFrame fenetre = new Fenêtre(new ArticleController(),new FactureController(),new ClientController());
-        fenetre.setVisible(true);
+
 
     }
 }

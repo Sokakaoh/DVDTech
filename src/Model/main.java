@@ -33,7 +33,7 @@ public class main {
         Support cassette = new Cassette();
         Support bluRay = new BluRay();
 
-        //Controller test = new Controller();
+        Controller test = new Controller();
 
 
 
@@ -64,7 +64,6 @@ public class main {
         System.out.println(l2.toString());
         c1.toStringHistorique();
         System.out.println(facture.aPayer());
-        System.out.println(facture.toString());
 
 
 

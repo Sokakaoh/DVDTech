@@ -87,7 +87,6 @@ public class Client {
         {
             for(Location location: locationsClient){
                 System.out.println(locationsClient);
-
             }
         }
     }

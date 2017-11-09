@@ -35,8 +35,9 @@ public class Facture {
         this.penalite = 0;
         float prixFinal = 0;
         for (Location location : location) {
+
             prixFinal = location.getPrix() + prixFinal;
-            penalite = location.getPenaliter() + penalite;
+            penalite = location.getPenaliter() - penalite;
         }
         return penalite + prixFinal;
     }

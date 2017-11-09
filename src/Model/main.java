@@ -29,7 +29,7 @@ public class main {
         Support cassette = new Cassette();
         Support bluRay = new BluRay();
 
-        //Controller test = new Controller();
+        Controller test = new Controller();
 
 
 

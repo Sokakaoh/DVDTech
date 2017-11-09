@@ -39,7 +39,7 @@ public class Location {
 
     @Override
     public String toString() {
-        return article.getNom();
+        return clientLoc.getNomClient()+' '+article.getNom()+' '+getTempsRestant()+" restant";
     }
 
     public Article getArticle() {

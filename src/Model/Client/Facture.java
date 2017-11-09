@@ -31,6 +31,6 @@ public class Facture {
 
     @Override
     public String toString() {
-        return location + "en" +moyFacturation;
+        return location + " en" +moyFacturation;
     }
 }

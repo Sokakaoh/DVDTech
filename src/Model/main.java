@@ -44,13 +44,18 @@ public class main {
         //Article f2 = new Film("Le Seigneur des Anneaux",plusAncien,cassette,150,12);
         Location l= new Location(c1, f1, 48, new Espece());
         Location l2 = new Location(c1,f2,48,new ComptePrepaye());
+
         Facture facture = new Facture(l,new Espece());
+
         System.out.println(c1.toString());
         System.out.println(f1.toString());
         System.out.println(f2.toString());
         System.out.println(l.toString());
         System.out.println(l2.toString());
+        c1.toStringHistorique();
+        System.out.println(facture.aPayer());
         System.out.println(facture.toString());
+
 
 
 

@@ -14,11 +14,11 @@ public class nouveauArticle extends JPanel{
         JTextField nomArticle = new JTextField();
 
         JLabel categorie = new JLabel("Categorie : ");
-        Object[] categories = new Object[]{Catégorie.class}; // trouver solution pour avoirs tous les client
+        Object[] categories = new Object[]{}; // trouver solution pour avoirs tous les client
         JComboBox listeCategorie = new JComboBox(categories);
 
         JLabel support = new JLabel("Support : ");
-        Object[] supports = new Object[]{Support.class}; // trouver solution pour avoirs tous les client
+        Object[] supports = new Object[]{}; // trouver solution pour avoirs tous les client
         JComboBox listeSupport = new JComboBox(supports);
 
         JLabel duree = new JLabel("Durée de l'article : ");
@@ -29,8 +29,9 @@ public class nouveauArticle extends JPanel{
 
         JButton ajouter = new JButton("Ajouter");
 
-        panel.add(nom,nomArticle);
-        panel.add(categorie,listeCategorie);
+        panel.add(nom);
+        panel.add(nomArticle);
+        panel.add(categorie,listeCategorie);///
         panel.add(support,listeSupport);
         panel.add(duree,dureeArticle);
         panel.add(prix,prixArticleFilm);

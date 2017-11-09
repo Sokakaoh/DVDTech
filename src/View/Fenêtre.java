@@ -58,35 +58,6 @@ public class Fenêtre extends JFrame {
 
     }
 
-
-    public void fenetreNouvelleLocation(){
-        this.setLocationRelativeTo(null);
-        this.getContentPane().add(nouvelleLocation);
-    }
-    public void fenetreNouveauArticle(){
-        this.setLocationRelativeTo(null);
-        this.getContentPane().add(nouveauArticle);
-
-    }
-    public void fenetreNouveauClient(){
-        this.setLocationRelativeTo(null);
-        this.getContentPane().add(nouveauClient);
-    }
-    public void fenetreAfficherLocation(){
-        this.setLocationRelativeTo(null);
-        this.getContentPane().add(afficherLocation);
-    }
-    public void fenetreRecheClient(){
-        this.setLocationRelativeTo(null);
-        this.repaint();
-        this.getContentPane().add(rechercherLocationClient);
-    }
-
-    public void initFenetre()
-    {
-
-    }
-
     @Override
     public void repaint(){
         this.validate();

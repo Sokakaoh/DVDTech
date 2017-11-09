@@ -30,8 +30,8 @@ public class Client {
 
     }
 
-    public void faireLocation(Article a, long duree, MoyenFacturation moyenFacturation){
-        this.locationsClient.add(new Location(this,a,duree,moyenFacturation));
+    public void faireLocation(Article a, long duree){
+        this.locationsClient.add(new Location(this,a,duree));
     }
 
     public ArrayList<Location> getLocationsClient() {
@@ -83,11 +83,13 @@ public class Client {
     }
 
     public void toStringHistorique(){
-        for(Location location: locationsClient){
-            System.out.println(locationsClient);
+        if(locationsClient != null)
+        {
+            for(Location location: locationsClient){
+                System.out.println(locationsClient);
 
+            }
         }
-
     }
     public String toString(){
         return "Nom du client : " +nomClient + " , prenom du client :" + prenomClient + " , adresse du client : " + adresseClient

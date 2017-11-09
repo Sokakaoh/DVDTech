@@ -29,7 +29,7 @@ public class main {
         Support cassette = new Cassette();
         Support bluRay = new BluRay();
 
-        Controller test = new Controller();
+        //Controller test = new Controller();
 
 
 
@@ -38,7 +38,7 @@ public class main {
         Article f1 = new Film("La-Haut",deAnnée,dvd,126,15,new Action());
         //Article f2 = new Film("Le Seigneur des Anneaux",plusAncien,cassette,150,12);
         Location l= new Location(c1, f1, 48, new Espece());
-        System.out.print(l.toString());
+        System.out.print(l.getArticle().toString());
 
 
 

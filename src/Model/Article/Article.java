@@ -1,15 +1,11 @@
 package Model.Article;
 
+import Model.Genre.Genre;
+
 /**
  * Created by msif on 19/10/17.
  */
 public abstract class Article {
-    private float prixArticle;
-    private boolean reserved;
-
-    public float getPrix()
-    {
-        return prixArticle;
-    }
-    public abstract String getNomFilm();
+    public abstract float getPrix();
+    public abstract String getNom();
 }

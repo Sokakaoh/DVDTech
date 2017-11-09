@@ -53,6 +53,16 @@ public class Film extends Article {
         this.dureeMinute = dureeMinute;
     }
 
+    @Override
+    public float getPrix(){
+        return getPrixFilm();
+    }
+    @Override
+    public String getNom(){
+        return getNomFilm();
+    }
+
+
 
     public float getPrixFilm() {
         return (prixFilm * categorieFilm.getCoef())*support.getPrixCoef();

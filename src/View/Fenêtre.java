@@ -58,10 +58,6 @@ public class Fenêtre extends JFrame {
 
     }
 
-    @Override
-    public void repaint(){
-        this.validate();
-    }
 
     public void setControleMenu(actionButton controleMenu) {
         this.bNouvelleLocation.addActionListener(controleMenu);

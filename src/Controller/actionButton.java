@@ -27,6 +27,7 @@ public class actionButton extends JFrame implements ActionListener {
             f.getContentPane().add(nouvelleLocation);
             f.buttonEnable(f.bNouvelleLocation);
             f.pack();
+
         }
         if(actionEvent.getSource() == f.bNouveauClient){
             f.getContentPane().removeAll();
@@ -38,13 +39,13 @@ public class actionButton extends JFrame implements ActionListener {
             f.getContentPane().removeAll();
             f.getContentPane().add(rechercheClient);
             f.buttonEnable(f.bClient);
-            f.pack();
+            f.repaint();
         }
         if(actionEvent.getSource() == f.bNouveauArticle){
             f.getContentPane().removeAll();
             f.getContentPane().add(nouveauArticle);
             f.buttonEnable(f.bNouveauArticle);
-            f.pack();
+            f.repaint();
         }
     }
 }

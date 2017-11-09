@@ -83,11 +83,13 @@ public class Client {
     }
 
     public void toStringHistorique(){
-        for(Location location: locationsClient){
-            System.out.println(locationsClient);
+        if(locationsClient != null)
+        {
+            for(Location location: locationsClient){
+                System.out.println(locationsClient);
 
+            }
         }
-
     }
     public String toString(){
         return "Nom du client : " +nomClient + " , prenom du client :" + prenomClient + " , adresse du client : " + adresseClient

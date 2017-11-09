@@ -29,7 +29,6 @@ public class Location {
         return dateRetour.compareTo(dateAujourdHui);
     }
 
-
     public float getPenaliter(){
         return  -(getTempsRestant()*prix);
     }

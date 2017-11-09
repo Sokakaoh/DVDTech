@@ -31,6 +31,7 @@ public class Location {
         return dateRetour.compareTo(dateAujourdHui);
     }
 
+
     public void addPenaliter(){
         float penalite = -(getTempsRestant()*prix);
         factureLoc.setPenaliter(penalite);
@@ -41,6 +42,10 @@ public class Location {
 
     @Override
     public String toString() {
-        return article.getNomFilm();
+        return article.getNom();
+    }
+
+    public Article getArticle() {
+        return article;
     }
 }
